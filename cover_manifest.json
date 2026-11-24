@@ -280,77 +280,77 @@
     {
       "key": "d1_moa_guides",
       "part": "01",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d2_moa_gap_one",
       "part": "01",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d2_moa_gap_wide",
       "part": "01",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d3_doctor_signals",
       "part": "02",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d4_doctor_longmid",
       "part": "02",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d4_doctor_thirds",
       "part": "02",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d5_sia_profile_left",
       "part": "03",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d6_doctor_neck",
       "part": "03",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d7_haru_sheet",
       "part": "04",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d8_haru_underrim",
       "part": "04",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d9_moa_turnaround",
       "part": "05",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d10_sia_neutral",
       "part": "05",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d10_sia_smile",
       "part": "05",
-      "status": "requested"
+      "status": "missing (부분 수정 결과 미수령)"
     },
     {
       "key": "d11_doctor_chin_fixed",
       "part": "06",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d12_moa_adult",
       "part": "06",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     }
   ]
 }
