@@ -1,0 +1,13 @@
+order,conversation,file,page,ratio,how,status
+1,M01,p1_moa_front_base_b,01_front_female.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+2,M01,p1_moa_cheek_compare_b,01_front_female.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+3,M02,p2_doctor_front_base_b,02_front_male.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+4,M02,p2_doctor_bust_b,02_front_male.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+5,M03,p3_sia_doctor_profile_b,03_profile.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+6,M03,p3_sia_doctor_profile_b2,03_profile.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+7,M04,p4_haru_lids_glasses_b,04_variation.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+8,M04,p4_haru_lids_glasses_b2,04_variation.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+9,M05,p5_sia_turnaround_b,05_ai_face.html#make,16:9,새 대화 세 개에서 따로 만든 뒤 나란히 붙여 한 장으로,
+10,M05,p5_moa_styles_b,05_ai_face.html#make,16:9,A 결과를 첨부하고 Change only 문장으로,
+11,M06,f1_fixed,06_failure_lab.html#make,2:3,그림 생성이 아니라 '부분 수정(영역 칠하기)' 기능으로 — 눈·눈썹만 칠하기,
+12,M06,f7_fixed,06_failure_lab.html#make,2:3,A 결과를 첨부하고 Change only 문장으로,

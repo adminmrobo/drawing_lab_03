@@ -1,0 +1,278 @@
+{
+  "series_ko": "연구실 특별편 · 그리기와 렌더링",
+  "title_ko": "구조 먼저 그리기 연구실 03 · 얼굴 편",
+  "site_url": "https://adminmrobo.github.io/drawing_lab_03/",
+  "site_title": "구조 먼저 그리기 연구실 03 · 얼굴 편 — 같은 기준선, 다른 얼굴",
+  "version": "v1.0",
+  "date": "2026-11-24",
+  "ontology": {
+    "pages": [
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "01_front_female.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "02_front_male.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "03_profile.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "04_variation.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "05_ai_face.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "06_failure_lab.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "practice/index.html",
+        "kg": true,
+        "export": true
+      }
+    ]
+  },
+  "covers": [
+    {
+      "key": "cover_index",
+      "page": "index.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    },
+    {
+      "key": "cover_01",
+      "page": "01_front_female.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    },
+    {
+      "key": "cover_02",
+      "page": "02_front_male.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    },
+    {
+      "key": "cover_03",
+      "page": "03_profile.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    },
+    {
+      "key": "cover_04",
+      "page": "04_variation.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    },
+    {
+      "key": "cover_05",
+      "page": "05_ai_face.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    },
+    {
+      "key": "cover_06",
+      "page": "06_failure_lab.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    },
+    {
+      "key": "cover_07",
+      "page": "practice/index.html",
+      "style": "16-bit pixel art",
+      "status": "requested"
+    }
+  ],
+  "images": [
+    {
+      "key": "p1_moa_front_base",
+      "page": "01_front_female.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "p1_moa_cheek_compare",
+      "page": "01_front_female.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "p2_doctor_front_base",
+      "page": "02_front_male.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "p2_doctor_bust",
+      "page": "02_front_male.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "p3_sia_doctor_profile",
+      "page": "03_profile.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "p4_haru_lids_glasses",
+      "page": "04_variation.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "p5_sia_turnaround",
+      "page": "05_ai_face.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "p5_moa_styles",
+      "page": "05_ai_face.html",
+      "ratio": "16:9",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f1_eyes",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f2_long",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f3_chin",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f4_back",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f5_jaw",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f6_neck",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f7_glasses",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    },
+    {
+      "key": "f8_lips",
+      "page": "06_failure_lab.html",
+      "ratio": "2:3",
+      "style": "anime",
+      "status": "requested"
+    }
+  ],
+  "make_compare_images": [
+    {
+      "key": "p1_moa_front_base_b",
+      "page": "01_front_female.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p1_moa_cheek_compare_b",
+      "page": "01_front_female.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p2_doctor_front_base_b",
+      "page": "02_front_male.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p2_doctor_bust_b",
+      "page": "02_front_male.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p3_sia_doctor_profile_b",
+      "page": "03_profile.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p3_sia_doctor_profile_b2",
+      "page": "03_profile.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p4_haru_lids_glasses_b",
+      "page": "04_variation.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p4_haru_lids_glasses_b2",
+      "page": "04_variation.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p5_sia_turnaround_b",
+      "page": "05_ai_face.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "p5_moa_styles_b",
+      "page": "05_ai_face.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "f1_fixed",
+      "page": "06_failure_lab.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    },
+    {
+      "key": "f7_fixed",
+      "page": "06_failure_lab.html#make",
+      "status": "requested (A 결과를 받은 뒤)"
+    }
+  ]
+}
