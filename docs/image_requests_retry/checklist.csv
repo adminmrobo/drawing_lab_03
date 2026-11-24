@@ -1,0 +1,9 @@
+order,part,drill,file,base,ratio,success,status
+1,01,d2,r1_moa_gap_wide,d2_moa_gap_one,2:3,"눈 사이에 눈 하나가 넉넉히 들어가고, 머리·옷·표정은 ①과 같으면 성공",
+2,02,d2,r2_doctor_longmid,d4_doctor_longmid,2:3,눈썹~코 밑이 코 밑~턱보다 눈에 띄게 길면 성공,
+3,02,d2,r2_doctor_thirds,r2_doctor_longmid(바로 앞 결과),2:3,"①보다 코가 짧고, 세 간격 차이가 줄면 성공",
+4,03,d1,r3_sia_profile_left,새로 만들기,2:3,코끝이 그림의 왼쪽을 향하면 성공(아니면 좌우 반전),
+5,04,d1,r4_haru_brows,d7_haru_sheet,16:9,세 번째 얼굴의 눈썹이 가운데 얼굴보다 분명히 높으면 성공,
+6,04,d2,r4_haru_underrim,d8_haru_underrim,2:3,"렌즈 위쪽에 테가 없고, 아래 테가 눈동자 아래를 지나면 성공",
+7,05,d2,d10_sia_smile,d10_sia_neutral,2:3,머리·귀걸이·옷이 ①과 같고 표정만 바뀌면 성공,
+8,06,d1,r6_doctor_chin,d11_doctor_chin_fixed,2:3,"턱 끝이 입 너비쯤으로 평평하고, 얼굴 길이 ÷ 폭이 1.6 안팎이면 성공",

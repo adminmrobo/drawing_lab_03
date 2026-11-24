@@ -352,5 +352,47 @@
       "part": "06",
       "status": "done (2026-11-24, webp)"
     }
+  ],
+  "retry_images": [
+    {
+      "key": "r1_moa_gap_wide",
+      "base": "d2_moa_gap_one",
+      "status": "requested"
+    },
+    {
+      "key": "r2_doctor_longmid",
+      "base": "d4_doctor_longmid",
+      "status": "requested"
+    },
+    {
+      "key": "r2_doctor_thirds",
+      "base": "r2_doctor_longmid(바로 앞 결과)",
+      "status": "requested"
+    },
+    {
+      "key": "r3_sia_profile_left",
+      "base": "새로 만들기",
+      "status": "requested"
+    },
+    {
+      "key": "r4_haru_brows",
+      "base": "d7_haru_sheet",
+      "status": "requested"
+    },
+    {
+      "key": "r4_haru_underrim",
+      "base": "d8_haru_underrim",
+      "status": "requested"
+    },
+    {
+      "key": "d10_sia_smile",
+      "base": "d10_sia_neutral",
+      "status": "requested"
+    },
+    {
+      "key": "r6_doctor_chin",
+      "base": "d11_doctor_chin_fixed",
+      "status": "requested"
+    }
   ]
 }

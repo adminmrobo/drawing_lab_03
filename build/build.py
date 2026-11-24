@@ -9,7 +9,7 @@ from content_b import P4, P5, P6
 from content_make import MAKE
 from make_requests import PROMPTS, CONV_OF, ATTACH_OF
 from img_notes import ALT, DRILL_RES
-from content_drill import DRILL
+from content_drill import DRILL, RETRY, BASE_OF
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VER = "v1.0"
@@ -332,7 +332,20 @@ def make_section(P):
 
 def res_html(no, did):
     t = DRILL_RES.get(f"{no}-{did}")
+    if t and f"{no}-{did}" in RETRY:
+        t = t.replace("실제 결과:", "1차 시도 결과:", 1)
     return f'<p style="background:#fff7ec;border-left:4px solid var(--orange);padding:8px 12px;border-radius:6px">{E(t)}</p>' if t else ""
+
+def retry_html(no, did, shown):
+    r = RETRY.get(f"{no}-{did}")
+    if not r:
+        return ""
+    out = f'<div class="box" style="border-left:4px solid var(--blue);margin-top:14px"><h4 style="margin-top:0">다시 시도 — 1차 결과는 위에 그대로 두고, 방법을 바꿔 다시 받습니다</h4><p>{E(r["why"])}</p>'
+    for lab, how, pr, key, alt, ar, ok in r["items"]:
+        pic = "" if key in shown else f"<div>{art(key, alt, ar, alt)}</div>"
+        out += f"""<div class="pair"><div class="promptbox"><b>{E(lab)}</b><p class="hint">방법: {E(how)}</p><pre>{E(pr)}</pre><button type="button" class="btn copy">복사하기</button></div>{pic}</div>
+<p><span class="chip">성공 기준</span>{E(ok)}</p>"""
+    return out + "</div>"
 
 def drill_section(P):
     ds = DRILL.get(P["no"])
@@ -355,7 +368,7 @@ def drill_section(P):
 <h4>순서</h4><ol>{steps}</ol>
 <h4>넣을 프롬프트와 예상 결과</h4>{prs}
 <h4>확인할 것</h4><ol>{chk}</ol>
-<div class="easy"><b>예상 결과</b> — {E(d['expect'])}</div>{res_html(P['no'], d['id'])}
+<div class="easy"><b>예상 결과</b> — {E(d['expect'])}</div>{res_html(P['no'], d['id'])}{retry_html(P['no'], d['id'], [p[2] for p in d['prompts']])}
 <h4>자주 생기는 문제와 대처</h4><div class="tbl"><table><thead><tr><th>문제</th><th>이렇게 고칩니다</th></tr></thead><tbody>{tr}</tbody></table></div>
 <p><span class="chip">더 해 보기</span>{E(d['more'])}</p></div>"""
     return out + "</div></section>"
