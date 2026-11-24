@@ -8,6 +8,7 @@ from content_a import P1, P2, P3
 from content_b import P4, P5, P6
 from content_make import MAKE
 from make_requests import PROMPTS, CONV_OF, ATTACH_OF
+from img_notes import ALT
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VER = "v1.0"
@@ -44,6 +45,10 @@ def has_img(key):
     return os.path.exists(os.path.join(ROOT, "assets", "img", key + ".webp"))
 
 def art(key, alt, ar="16/9", cap=None, pre="", cls=""):
+    if key in ALT:
+        if cap == alt:
+            cap = ALT[key]
+        alt = ALT[key]
     cap_html = f"<figcaption>{E(cap)}</figcaption>" if cap else ""
     if has_img(key):
         return f'<figure class="art {cls}" data-img="{key}"><img src="{pre}assets/img/{key}.webp" alt="{E(alt)}" loading="lazy" decoding="async">{cap_html}</figure>'
@@ -304,7 +309,7 @@ def make_section(P):
         return ""
     refs = " · ".join(f'<a href="assets/refs/{f}" download>{f.replace(".png", "")}</a>' for f in REFS_DL)
     out = f"""<section class="room" id="make"><div class="wrap"><div class="roomno">{P['no']}부 · 직접 만들기</div><h2>프롬프트로 직접 만들어 보기</h2>
-<div class="box"><p>이 부에서 배운 원리를 그림 생성 AI(Genspark 등)로 직접 확인합니다. <b>A</b>는 이 페이지 그림을 만드는 프롬프트, <b>B</b>는 원리를 하나 빼거나 바꾼 비교용 문장입니다.</p>
+<div class="box"><p>이 부에서 배운 원리를 그림 생성 AI(Genspark 등)로 직접 확인합니다. <b>A</b>는 이 페이지 그림을 실제로 만든 프롬프트, <b>B</b>는 원리를 하나 빼거나 바꾼 비교용 문장입니다.</p>
 <ol style="margin:6px 0 0;padding-left:20px"><li>새 대화를 열고 아래 '첨부'에 적힌 참고 그림을 올립니다.</li><li>A를 붙여 넣어 만들고, 확인표로 결과를 점검합니다.</li><li>같은 대화에 B를 이어 붙여 다시 만들고, A 결과와 나란히 비교합니다. 구도가 흔들리면 'keep the same framing'을 덧붙입니다.</li><li>같은 대화에서 차이가 약하면 새 대화에서 처음부터 만들어 보세요. 결과는 매번 다릅니다.</li></ol>
 <p class="hint" style="margin-top:8px">참고 그림 내려받기: {refs}</p></div>"""
     for i, t in enumerate(tasks, 1):
@@ -319,7 +324,7 @@ def make_section(P):
         res = f'<p style="background:#fff7ec;border-left:4px solid var(--orange);padding:8px 12px;border-radius:6px">{E(t["res"])}</p>' if t.get("res") else ""
         tip = f'<p class="hint">{E(t["tip"])}</p>' if t.get("tip") else ""
         out += f"""<div class="failcard" id="make{i}"><h3>실습 {i} · {E(t['title'])}</h3><p>{E(t['goal'])}</p>
-<div class="pair"><div class="promptbox"><b>A — 이 페이지 그림을 만드는 프롬프트</b><p class="hint">첨부: {E(att)}</p><pre>{E(A)}</pre><button type="button" class="btn copy">복사하기</button></div>
+<div class="pair"><div class="promptbox"><b>A — 이 페이지 그림을 실제로 만든 프롬프트</b><p class="hint">첨부: {E(att)}</p><pre>{E(A)}</pre><button type="button" class="btn copy">복사하기</button></div>
 <div>{art(t['img'], alt, ar, "A 결과 — Genspark로 만든 그림")}</div></div>
 {bpart}<h4>결과에서 확인할 것</h4><ol>{chk}</ol>{res}{tip}</div>"""
     return out + "</div></section>"
@@ -414,7 +419,7 @@ def build_index():
 <p class="hint" style="margin-top:10px">하루·시아·모아는 20대 성인 연구원, 박사는 30대 성인 남성입니다. 얼굴 비율 실험에서도 모두 성인 얼굴을 기준으로 합니다.</p></div></section>
 <section id="source"><div class="wrap"><h2>원리와 출처</h2>
 <p>1~4부의 그리기 원리(원과 기준선, 원 양옆 깎기, 원 + 장기말, 남녀 부위 위치, 옆얼굴의 귀·목, 반쯤 감은 눈과 안경, 옆얼굴 점검)는 일반적인 얼굴 데생 원리이며, YANAMi의 작법서 『男女の顔の描き分け 角度別・年齢別・表情別のキャラデッサン』(ホビージャパン, 2018) 1장 「基本の顔を描き分けよう」를 참고해 정리했습니다. 책의 그림·문장·도식·구성 순서는 옮기지 않았고, 연구실 캐릭터와 직접 움직이는 실험으로 새로 구성했습니다. 책에서 어린 인물을 예로 든 부분은 모두 성인 캐릭터로 바꿔 다뤘습니다.</p>
-<p>원에서 머리를 짓는 방법은 Loomis(1956), 세 간격 같은 비율 기준이 실제 사람에게는 근사치라는 점은 Farkas 외(1985), 가림 영역 다시 그리기는 확산 모델 연구를 바탕으로 쉽게 풀었습니다(아래 출처). 페이지의 그림(표지 8장은 픽셀아트, 본문은 애니풍·반실사·실사풍)은 Genspark로 만들며, 그림이 오기 전에는 '그림 준비 중' 자리로 둡니다. 실험 패널은 모두 페이지 안에서 직접 계산해 그립니다.</p></div></section>
+<p>원에서 머리를 짓는 방법은 Loomis(1956), 세 간격 같은 비율 기준이 실제 사람에게는 근사치라는 점은 Farkas 외(1985), 가림 영역 다시 그리기는 확산 모델 연구를 바탕으로 쉽게 풀었습니다(아래 출처). 페이지의 그림 36장(표지 8장은 픽셀아트, 본문·실패·비교 그림은 애니풍·반실사·실사풍)은 Genspark로 만들었습니다. 요청과 다르게 나온 그림은 그림 설명과 '실제 결과'에 있는 그대로 적었습니다. 실험 패널은 모두 페이지 안에서 직접 계산해 그립니다.</p></div></section>
 """
     s += kg_block("index", [P["file"] for P in PARTS] + ["practice/index.html"])
     s += footer()

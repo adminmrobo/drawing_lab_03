@@ -54,49 +54,49 @@
       "key": "cover_index",
       "page": "index.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "cover_01",
       "page": "01_front_female.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "cover_02",
       "page": "02_front_male.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "cover_03",
       "page": "03_profile.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "cover_04",
       "page": "04_variation.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "cover_05",
       "page": "05_ai_face.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "cover_06",
       "page": "06_failure_lab.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "cover_07",
       "page": "practice/index.html",
       "style": "16-bit pixel art",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     }
   ],
   "images": [
@@ -105,174 +105,175 @@
       "page": "01_front_female.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p1_moa_cheek_compare",
       "page": "01_front_female.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p2_doctor_front_base",
       "page": "02_front_male.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p2_doctor_bust",
       "page": "02_front_male.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p3_sia_doctor_profile",
       "page": "03_profile.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p4_haru_lids_glasses",
       "page": "04_variation.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p5_sia_turnaround",
       "page": "05_ai_face.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p5_moa_styles",
       "page": "05_ai_face.html",
       "ratio": "16:9",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f1_eyes",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f2_long",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f3_chin",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f4_back",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f5_jaw",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f6_neck",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f7_glasses",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f8_lips",
       "page": "06_failure_lab.html",
       "ratio": "2:3",
       "style": "anime",
-      "status": "requested"
+      "status": "done (2026-11-24, webp)"
     }
   ],
   "make_compare_images": [
     {
       "key": "p1_moa_front_base_b",
       "page": "01_front_female.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p1_moa_cheek_compare_b",
       "page": "01_front_female.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p2_doctor_front_base_b",
       "page": "02_front_male.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p2_doctor_bust_b",
       "page": "02_front_male.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p3_sia_doctor_profile_b",
       "page": "03_profile.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p3_sia_doctor_profile_b2",
       "page": "03_profile.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p4_haru_lids_glasses_b",
       "page": "04_variation.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p4_haru_lids_glasses_b2",
       "page": "04_variation.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p5_sia_turnaround_b",
       "page": "05_ai_face.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "p5_moa_styles_b",
       "page": "05_ai_face.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f1_fixed",
       "page": "06_failure_lab.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "f7_fixed",
       "page": "06_failure_lab.html#make",
-      "status": "requested (A 결과를 받은 뒤)"
+      "status": "done (2026-11-24, webp)"
     }
-  ]
+  ],
+  "notes": "요청과 다르게 나온 그림(B 비교 8쌍의 약한 차이, f4·f6 약한 실패, f7 재현 안 됨, f2 리본 위치)은 build/img_notes.py와 페이지의 실제 결과에 그대로 적음"
 }
