@@ -271,7 +271,7 @@ RETRY = {
  "4-d1": dict(why="세 번째 얼굴의 눈썹이 거의 올라가지 않았습니다. 그 얼굴의 눈썹만 칠해 다시 그리고, '바깥 끝을 높이 올린 아치'로 분명히 적습니다.",
    items=[("다시 시도 — 세 번째 얼굴의 눈썹만", "부분 수정: d7_haru_sheet 그림에서 오른쪽(세 번째) 얼굴의 두 눈썹만 칠하기(앞머리에 가린 부분 포함, 눈꺼풀은 빼기)",
            "Inside the painted area only: eyebrows clearly raised and arched high, the outer ends lifted noticeably — a bold, self-assured look. Keep the half-lowered eyelids, the eyes, the bangs and the other two faces unchanged." + NOTEXT,
-           "r4_haru_brows", "다시 시도 — 세 번째 얼굴의 눈썹만 높이 올린 하루의 표정 시트", "16/9", "세 번째 얼굴의 눈썹이 가운데 얼굴보다 분명히 높으면 성공")]),
+           "r4_haru_brows", "다시 시도 — 세 번째 얼굴의 눈썹만 높이 올린 하루의 표정 시트", "2/3", "세 번째 얼굴의 눈썹이 가운데 얼굴보다 분명히 높으면 성공")]),
  "4-d2": dict(why="언더림을 문장으로 풀어 적어도 위 테가 생겼습니다. 새로 만들지 말고, 렌즈 위의 테만 칠해 지웁니다. 지울 곳이 작고 분명해서 가장 확실한 방법입니다.",
    items=[("다시 시도 — 위 테 지우기", "부분 수정: d8_haru_underrim 그림에서 두 렌즈 위쪽 테(가는 띠)와 두 렌즈 사이 다리 위쪽만 칠하기",
            "Inside the painted area only: remove the glasses frame here and show what is behind it — her eyebrows, skin and bangs. The lenses now have no frame on the top edge. Keep the bottom frame, the side temples and the eyes unchanged." + NOTEXT,

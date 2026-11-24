@@ -8,7 +8,7 @@ from content_a import P1, P2, P3
 from content_b import P4, P5, P6
 from content_make import MAKE
 from make_requests import PROMPTS, CONV_OF, ATTACH_OF
-from img_notes import ALT, DRILL_RES
+from img_notes import ALT, DRILL_RES, RETRY_RES
 from content_drill import DRILL, RETRY, BASE_OF
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -345,6 +345,10 @@ def retry_html(no, did, shown):
         pic = "" if key in shown else f"<div>{art(key, alt, ar, alt)}</div>"
         out += f"""<div class="pair"><div class="promptbox"><b>{E(lab)}</b><p class="hint">방법: {E(how)}</p><pre>{E(pr)}</pre><button type="button" class="btn copy">복사하기</button></div>{pic}</div>
 <p><span class="chip">성공 기준</span>{E(ok)}</p>"""
+    rr = RETRY_RES.get(f"{no}-{did}")
+    if rr:
+        col = {"성공": "var(--green)", "부분 성공": "var(--orange)", "실패": "var(--red)"}[rr[0]]
+        out += f'<p style="border-left:4px solid {col};background:#f7f9fb;padding:8px 12px;border-radius:6px"><b style="color:{col}">다시 시도 결과 · {rr[0]}</b> — {E(rr[1])}</p>'
     return out + "</div>"
 
 def drill_section(P):

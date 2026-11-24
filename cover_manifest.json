@@ -340,7 +340,7 @@
     {
       "key": "d10_sia_smile",
       "part": "05",
-      "status": "missing (부분 수정 결과 미수령)"
+      "status": "done (2026-11-24, webp)"
     },
     {
       "key": "d11_doctor_chin_fixed",
@@ -357,42 +357,42 @@
     {
       "key": "r1_moa_gap_wide",
       "base": "d2_moa_gap_one",
-      "status": "requested"
+      "status": "done (2026-11-24) · fail"
     },
     {
       "key": "r2_doctor_longmid",
       "base": "d4_doctor_longmid",
-      "status": "requested"
+      "status": "done (2026-11-24) · partial"
     },
     {
       "key": "r2_doctor_thirds",
       "base": "r2_doctor_longmid(바로 앞 결과)",
-      "status": "requested"
+      "status": "done (2026-11-24) · partial"
     },
     {
       "key": "r3_sia_profile_left",
       "base": "새로 만들기",
-      "status": "requested"
+      "status": "done (2026-11-24) · success"
     },
     {
       "key": "r4_haru_brows",
       "base": "d7_haru_sheet",
-      "status": "requested"
+      "status": "done (2026-11-24) · fail"
     },
     {
       "key": "r4_haru_underrim",
       "base": "d8_haru_underrim",
-      "status": "requested"
+      "status": "done (2026-11-24) · fail"
     },
     {
       "key": "d10_sia_smile",
       "base": "d10_sia_neutral",
-      "status": "requested"
+      "status": "done (2026-11-24) · success"
     },
     {
       "key": "r6_doctor_chin",
       "base": "d11_doctor_chin_fixed",
-      "status": "requested"
+      "status": "done (2026-11-24) · fail"
     }
   ]
 }
