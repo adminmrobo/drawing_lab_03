@@ -398,27 +398,27 @@
   "retry3_images": [
     {
       "key": "t1_moa_gap_wide",
-      "status": "requested"
+      "status": "received (부분 성공)"
     },
     {
       "key": "t2_doctor_longmid",
-      "status": "requested"
+      "status": "received (성공)"
     },
     {
       "key": "t2_doctor_thirds",
-      "status": "requested"
+      "status": "received (성공)"
     },
     {
       "key": "t4_haru_brows",
-      "status": "requested"
+      "status": "received (성공)"
     },
     {
       "key": "t4_haru_rimless",
-      "status": "requested"
+      "status": "received (성공)"
     },
     {
       "key": "t6_doctor_chin",
-      "status": "requested"
+      "status": "received (성공)"
     }
   ]
 }
