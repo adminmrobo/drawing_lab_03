@@ -1,0 +1,7 @@
+order,part,drill,file,how,ratio,success,status
+1,01,d2,t1_moa_gap_wide,"새 대화: refs/moa_anime_base.png, refs/moa_sheet.png 첨부",2:3,1차 ①과 나란히 두었을 때 눈 사이가 한눈에 더 넓으면 성공,
+2,02,d2,t2_doctor_longmid,새 대화 A: refs/doctor_sheet.png 첨부,2:3,눈썹~코 밑이 코 밑~턱보다 확실히 길면 성공,
+3,02,d2,t2_doctor_thirds,새 대화 B(①과 다른 대화): refs/doctor_sheet.png 첨부,2:3,①과 나란히 두었을 때 코가 짧고 얼굴이 짜여 보이면 성공,
+4,04,d1,t4_haru_brows,"새 대화: refs/haru_anime_base.png, refs/haru_sheet.png 첨부",2:3,눈썹이 1차 시트의 가운데 얼굴보다 확실히 높고 아치가 크면 성공,
+5,04,d2,t4_haru_rimless,"새 대화: refs/haru_anime_base.png, refs/haru_sheet.png 첨부",2:3,렌즈 위아래에 테가 없고 눈·눈썹이 다 보이면 성공,
+6,06,d1,t6_doctor_chin,새 대화: refs/doctor_sheet.png 첨부(f3 그림은 첨부하지 않음 — 첨부하면 뾰족한 턱을 따라 그리기 쉬움),2:3,f3와 나란히 두었을 때 턱 끝이 평평하고 넓으며 얼굴이 짧으면 성공,

@@ -394,5 +394,31 @@
       "base": "d11_doctor_chin_fixed",
       "status": "done (2026-11-24) · fail"
     }
+  ],
+  "retry3_images": [
+    {
+      "key": "t1_moa_gap_wide",
+      "status": "requested"
+    },
+    {
+      "key": "t2_doctor_longmid",
+      "status": "requested"
+    },
+    {
+      "key": "t2_doctor_thirds",
+      "status": "requested"
+    },
+    {
+      "key": "t4_haru_brows",
+      "status": "requested"
+    },
+    {
+      "key": "t4_haru_rimless",
+      "status": "requested"
+    },
+    {
+      "key": "t6_doctor_chin",
+      "status": "requested"
+    }
   ]
 }

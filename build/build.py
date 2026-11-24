@@ -9,7 +9,7 @@ from content_b import P4, P5, P6
 from content_make import MAKE
 from make_requests import PROMPTS, CONV_OF, ATTACH_OF
 from img_notes import ALT, DRILL_RES, RETRY_RES
-from content_drill import DRILL, RETRY, BASE_OF
+from content_drill import DRILL, RETRY, BASE_OF, RETRY3
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VER = "v1.0"
@@ -349,6 +349,12 @@ def retry_html(no, did, shown):
     if rr:
         col = {"성공": "var(--green)", "부분 성공": "var(--orange)", "실패": "var(--red)"}[rr[0]]
         out += f'<p style="border-left:4px solid {col};background:#f7f9fb;padding:8px 12px;border-radius:6px"><b style="color:{col}">다시 시도 결과 · {rr[0]}</b> — {E(rr[1])}</p>'
+    r3 = RETRY3.get(f"{no}-{did}")
+    if r3:
+        out += f'<h4>3차 시도 — 새 대화에서 크게 과장해 다시 받습니다</h4><p>{E(r3["why"])}</p>'
+        for lab, how, pr, key, alt, ar, ok in r3["items"]:
+            out += f"""<div class="pair"><div class="promptbox"><b>{E(lab)}</b><p class="hint">방법: {E(how)}</p><pre>{E(pr)}</pre><button type="button" class="btn copy">복사하기</button></div><div>{art(key, alt, ar, alt)}</div></div>
+<p><span class="chip">성공 기준</span>{E(ok)}</p>"""
     return out + "</div>"
 
 def drill_section(P):
