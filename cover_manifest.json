@@ -275,5 +275,82 @@
       "status": "done (2026-11-24, webp)"
     }
   ],
-  "notes": "요청과 다르게 나온 그림(B 비교 8쌍의 약한 차이, f4·f6 약한 실패, f7 재현 안 됨, f2 리본 위치)은 build/img_notes.py와 페이지의 실제 결과에 그대로 적음"
+  "notes": "요청과 다르게 나온 그림(B 비교 8쌍의 약한 차이, f4·f6 약한 실패, f7 재현 안 됨, f2 리본 위치)은 build/img_notes.py와 페이지의 실제 결과에 그대로 적음",
+  "drill_images": [
+    {
+      "key": "d1_moa_guides",
+      "part": "01",
+      "status": "requested"
+    },
+    {
+      "key": "d2_moa_gap_one",
+      "part": "01",
+      "status": "requested"
+    },
+    {
+      "key": "d2_moa_gap_wide",
+      "part": "01",
+      "status": "requested"
+    },
+    {
+      "key": "d3_doctor_signals",
+      "part": "02",
+      "status": "requested"
+    },
+    {
+      "key": "d4_doctor_longmid",
+      "part": "02",
+      "status": "requested"
+    },
+    {
+      "key": "d4_doctor_thirds",
+      "part": "02",
+      "status": "requested"
+    },
+    {
+      "key": "d5_sia_profile_left",
+      "part": "03",
+      "status": "requested"
+    },
+    {
+      "key": "d6_doctor_neck",
+      "part": "03",
+      "status": "requested"
+    },
+    {
+      "key": "d7_haru_sheet",
+      "part": "04",
+      "status": "requested"
+    },
+    {
+      "key": "d8_haru_underrim",
+      "part": "04",
+      "status": "requested"
+    },
+    {
+      "key": "d9_moa_turnaround",
+      "part": "05",
+      "status": "requested"
+    },
+    {
+      "key": "d10_sia_neutral",
+      "part": "05",
+      "status": "requested"
+    },
+    {
+      "key": "d10_sia_smile",
+      "part": "05",
+      "status": "requested"
+    },
+    {
+      "key": "d11_doctor_chin_fixed",
+      "part": "06",
+      "status": "requested"
+    },
+    {
+      "key": "d12_moa_adult",
+      "part": "06",
+      "status": "requested"
+    }
+  ]
 }

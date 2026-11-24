@@ -9,6 +9,7 @@ from content_b import P4, P5, P6
 from content_make import MAKE
 from make_requests import PROMPTS, CONV_OF, ATTACH_OF
 from img_notes import ALT
+from content_drill import DRILL
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VER = "v1.0"
@@ -329,12 +330,38 @@ def make_section(P):
 {bpart}<h4>결과에서 확인할 것</h4><ol>{chk}</ol>{res}{tip}</div>"""
     return out + "</div></section>"
 
+def drill_section(P):
+    ds = DRILL.get(P["no"])
+    if not ds:
+        return ""
+    keys = [p[2] for d in ds for p in d["prompts"]]
+    made = "예상 결과 그림은 아래 프롬프트로 실제로 만든 그림입니다." if all(has_img(k) for k in keys) else "예상 결과 그림은 아래 프롬프트로 만들 그림이며, 아직 받지 않은 그림은 '그림 준비 중' 자리에 글로 먼저 적어 두었습니다."
+    out = f"""<section class="room" id="drill"><div class="wrap"><div class="roomno">{P['no']}부 · 연습 과제</div><h2>프롬프트 연습 과제</h2>
+<div class="box"><p>이 부의 원리를 내 손으로 프롬프트에 옮겨 보는 과제 두 개입니다. 과제마다 <b>목표 → 순서 → 넣을 프롬프트 → 확인할 것 → 예상 결과 → 자주 생기는 문제</b> 순서로 적었습니다. {made} 결과는 매번 조금씩 다르니, 그림이 똑같지 않아도 '확인할 것'이 맞으면 성공입니다.</p></div>"""
+    for i, d in enumerate(ds, 1):
+        steps = "".join(f"<li>{E(x)}</li>" for x in d["steps"])
+        prs = ""
+        for lab, pr, key, alt, ar in d["prompts"]:
+            prs += f"""<div class="pair"><div class="promptbox"><b>{E(lab)}</b><pre>{E(pr)}</pre><button type="button" class="btn copy">복사하기</button></div><div>{art(key, alt, ar, alt)}</div></div>"""
+        chk = "".join(f'<li>{E(c)}' + (f' <a href="{l}">원리 보기</a>' if l else "") + "</li>" for c, l in d["check"])
+        tr = "".join(f"<tr><td>{E(a)}</td><td>{E(b)}</td></tr>" for a, b in d["trouble"])
+        out += f"""<div class="failcard" id="{d['id']}"><h3>연습 {i} · {E(d['title'])}</h3>
+<p><span class="chip">목표</span>{E(d['goal'])}</p><p><span class="chip">왜 이 연습인가</span>{E(d['why'])}</p>
+<p class="hint">첨부할 참고 그림: {E(d['attach'])} — 참고 그림은 위 <a href="#make">직접 만들어 보기</a>에서 내려받을 수 있습니다.</p>
+<h4>순서</h4><ol>{steps}</ol>
+<h4>넣을 프롬프트와 예상 결과</h4>{prs}
+<h4>확인할 것</h4><ol>{chk}</ol>
+<div class="easy"><b>예상 결과</b> — {E(d['expect'])}</div>
+<h4>자주 생기는 문제와 대처</h4><div class="tbl"><table><thead><tr><th>문제</th><th>이렇게 고칩니다</th></tr></thead><tbody>{tr}</tbody></table></div>
+<p><span class="chip">더 해 보기</span>{E(d['more'])}</p></div>"""
+    return out + "</div></section>"
+
 def build_part(P):
     t = f"{SERIES} {P['no']}부 — {P['title']}"
     s = head(t, P["desc"], P["og"], P["file"])
     navl = [(f"#{x['id']}", f"{k+1}단계") for k, x in enumerate(P["steps"])]
     if P.get("fails"): navl += [("#fails", "실패 8종")]
-    navl += [("#make", "직접 만들기"), ("#judge", "평가"), ("#sum", "정리"), (P["next"][0], "다음 →")]
+    navl += [("#make", "직접 만들기"), ("#drill", "연습 과제"), ("#judge", "평가"), ("#sum", "정리"), (P["next"][0], "다음 →")]
     s += nav(navl)
     s += cover(P["cover_key"], P["cover_cap"], P["cover_cast"])
     s += f"""<header class="hero"><div class="wrap"><span class="kicker">{E(P['kicker'])}</span><h1>{E(P['title'])}</h1><p class="lead">{E(P['lead'])}</p>
@@ -350,6 +377,7 @@ def build_part(P):
         d = P["drift"]
         s += f'<div class="failcard" id="drift"><h3>{E(d["title"])}</h3>' + "".join(f"<p>{E(x)}</p>" for x in d["body"]) + '<p><span class="chip">연결된 원리</span><a href="05_ai_face.html#s1">5부 1단계 얼굴 문장</a> · <a href="01_front_female.html#s2">1부 2단계 볼 높이</a></p></div></div></section>'
     s += make_section(P)
+    s += drill_section(P)
     s += judge(P["judge"]) + summary(P) + outro(P)
     s += kg_block(P["file"].replace(".html", ""), [P["file"]])
     s += footer()

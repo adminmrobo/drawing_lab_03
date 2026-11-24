@@ -26,6 +26,6 @@ python3 build/build.py && python3 build/check_numbers.py && python3 build/make_o
 python3 -m http.server 8765 &   # 아래 두 점검용
 python3 build/check_pages.py && python3 build/check_missions.py
 ```
-작성 방침: `docs/WRITING_POLICY.md` · 그림 36장(`assets/img/`, Genspark): 요청문 `docs/image_requests/`(본문·표지 24장), `docs/image_requests_make/`(비교 12장), 실제 그림 설명 `build/img_notes.py` · 페르소나 검사: `docs/persona_review.md`
+작성 방침: `docs/WRITING_POLICY.md` · 그림 36장(`assets/img/`, Genspark): 요청문 `docs/image_requests/`(본문·표지 24장), `docs/image_requests_make/`(비교 12장), 실제 그림 설명 `build/img_notes.py` · 연습 과제 예상 결과 요청문 `docs/image_requests_drill/`(15장) · 페르소나 검사: `docs/persona_review.md`
 
 캐릭터 이름·설정·그림은 저작권자 안상선의 허락 없이 사용할 수 없습니다. 캐릭터 그림: [fruitfly-lab-expressions](https://github.com/adminmrobo/fruitfly-lab-expressions).
